@@ -52,13 +52,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import contains from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@esm/index.mjs';
+import contains from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@v0.1.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@esm/index.mjs';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@v0.1.0-esm/index.mjs';
 ```
 
 #### contains( x, value )
@@ -116,7 +116,7 @@ out = fcn( 4 );
 <script type="module">
 
 import AccessorArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor@esm/index.mjs';
-import contains from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@esm/index.mjs';
+import contains from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@v0.1.0-esm/index.mjs';
 
 // Create an accessor array:
 var arr = new AccessorArray( [ 1, 2, 3, 4 ] );

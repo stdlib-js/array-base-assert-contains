@@ -45,38 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-assert-contains
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-contains = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var contains = require( 'path/to/vendor/umd/array-base-assert-contains/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.contains;
-})();
-</script>
+var contains = require( '@stdlib/array-base-assert-contains' );
 ```
 
 #### contains( x, value )
@@ -127,14 +119,9 @@ out = fcn( 4 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var AccessorArray = require( '@stdlib/array-base-accessor' );
+var contains = require( '@stdlib/array-base-assert-contains' );
 
 // Create an accessor array:
 var arr = new AccessorArray( [ 1, 2, 3, 4 ] );
@@ -148,11 +135,6 @@ bool = contains( arr, 4 );
 
 bool = contains( arr, 9 );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>

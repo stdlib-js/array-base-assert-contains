@@ -52,13 +52,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import contains from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-assert-contains/tags). For example,
+
+```javascript
 import contains from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@v0.2.2-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@v0.2.2-deno/mod.js';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@deno/mod.js';
 ```
 
 #### contains( x, value )
@@ -111,7 +116,7 @@ out = fcn( 4 );
 
 ```javascript
 import AccessorArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor@deno/mod.js';
-import contains from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@v0.2.2-deno/mod.js';
+import contains from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert-contains@deno/mod.js';
 
 // Create an accessor array:
 var arr = new AccessorArray( [ 1, 2, 3, 4 ] );

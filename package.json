@@ -81,9 +81,11 @@
     "structure",
     "array",
     "generic",
+    "test",
     "contains",
     "search",
-    "assert"
+    "assert",
+    "validate"
   ],
   "funding": {
     "type": "opencollective",
